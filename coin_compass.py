@@ -154,11 +154,10 @@ if rad == "USD Forecast":
 	period = n_years
 
 	#Load Dataset
-	usd = pd.read_csv("C:/Users/user1/Downloads/LVL 400/Project/Re-Try/data/USD.csv")
+	usd = pd.read_csv("https://github.com/VanessaAttaFynn/Final_Year_Project/edit/main/data/USD.csv",parse_dates=['Date'])
 	#Feature Selection
-	usd_price = usd.drop(usd.columns[[1,2,3,4,5]], axis=1)
-	#usd_price = usd_price.rename(columns={"Date": "ds", "Close": "y"})
-	usd_price.columns = ["ds","y"]
+	usd_price = usd.drop(usd.columns[[2,3,4,5,6]], axis=1)
+	usd_price = usd_price.rename(columns={"Date": "ds", "Price": "y"})
 	usd_price.head()
 
 	# Forecasting USD
