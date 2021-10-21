@@ -16,7 +16,7 @@ rad = st.sidebar.radio("<3", ["Home","Dashboard","Coin Forecast","USD Forecast"]
 
 #Home Page------------------------------------------------------------------------------
 if rad == "Home":
-	img = Image.open("f3.jpg")
+	img = Image.open("https://github.com/VanessaAttaFynn/Final_Year_Project/blob/main/f3.jpg")
 	st.image(img)
 	st.title("Home")
 
@@ -33,7 +33,7 @@ if rad == "Home":
 
 #Dashboard ------------------------------------------------------------------------
 if rad == "Dashboard":
-	img = Image.open("f1.jpg")
+	img = Image.open("https://github.com/VanessaAttaFynn/Final_Year_Project/blob/main/f1.jpg")
 	st.image(img)
 	st.title("Coin Compasss Dashboard")
 	
@@ -55,7 +55,7 @@ if rad == "Dashboard":
 # Forecast Section/Page------------------------------------------------------------
 
 if rad == "Coin Forecast":
-	img = Image.open("f2.jpg")
+	img = Image.open("https://github.com/VanessaAttaFynn/Final_Year_Project/blob/main/f2.jpg")
 	st.image(img)
 	st.title("Forecast")
 	
@@ -142,7 +142,7 @@ if rad == "Coin Forecast":
 #USD Forecast Page-------------------------------------------------------------------
 
 if rad == "USD Forecast":
-	img = Image.open("f1.jpg")
+	img = Image.open("https://github.com/VanessaAttaFynn/Final_Year_Project/blob/main/f1.jpg")
 	st.image(img)
 	st.title("USD Forecast")
 	
